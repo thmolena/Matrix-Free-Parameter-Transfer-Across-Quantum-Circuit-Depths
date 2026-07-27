@@ -34,3 +34,14 @@ Thumbs.db
 *.fdb_latexmk
 *.synctex.gz
 *.toc
+
+# --- environments, caches, internal working dirs (never commit) ---
+.venv/
+.venv-audit/
+.source-audit/
+.quick-manuscript-audit/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.DS_Store

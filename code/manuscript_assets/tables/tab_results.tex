@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\caption{\label{tab:results}Structure-to-schedule evaluation. Values aggregate each record once across rotating folds. MSE is over six normalized schedule coordinates; $R_1$ and $R_2$ are mean reference-relative regrets. No uncertainty claim is made from dependent neighborhoods.}
+\centering\small
+\begin{tabular}{lrrr@{\qquad}rrr}
+\toprule
+& \multicolumn{3}{c}{Source leave-one-out} & \multicolumn{3}{c}{Signature grouped}\\
+Method & MSE & $R_1$ (\%) & $R_2$ (\%) & MSE & $R_1$ (\%) & $R_2$ (\%)\\
+\midrule
+Constant & 7.230e-03 & 3.596 & 6.555 & 9.824e-03 & 4.945 & 7.690\\
+Ridge & 5.459e-02 & 2.704 & 3.268 & 2.761e-03 & 1.631 & 1.628\\
+Weighted nearest donor & 2.052e-04 & 0.029 & 0.181 & 2.441e-03 & 0.999 & 1.605\\
+Dense residual smoother & 5.448e-02 & 2.657 & 3.193 & 2.526e-03 & 1.551 & 1.571\\
+Hierarchical residual smoother & 5.448e-02 & 2.657 & 3.193 & 2.526e-03 & 1.551 & 1.571\\
+\bottomrule
+\end{tabular}
+\end{table*}

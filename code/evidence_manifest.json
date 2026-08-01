@@ -1,0 +1,62 @@
+{
+  "schema_version": 4,
+  "title": "Feature-Conditioned Affine Lifting of QAOA Parameters Across Circuit Depths",
+  "package": "hqml_topological_qaoa",
+  "version": "2.0.0",
+  "seed": 260731144,
+  "manuscript": {
+    "tex": "../main.tex",
+    "tex_sha256": "531b52c4d3e28bd93d1d14ccb27a423dcaaebac6fec1c3d83f6dd49460b4d846",
+    "pdf": "../main.pdf",
+    "pdf_sha256": "6e3c072fe60d278872b5517a662f9194aa41cddfd929a2b8e9e58cc74684d04f",
+    "pages": 3,
+    "figures": 1,
+    "tables": 2,
+    "bibliography_records": 11
+  },
+  "data": {
+    "collection": "Stanford Gset",
+    "registered_sources": 8,
+    "analysis_sources": ["G1", "G11", "G14", "G22", "G32", "G43"],
+    "excluded_topology_duplicates": {"G6": "G1", "G18": "G14"},
+    "records_per_source": 24,
+    "analysis_records": 144,
+    "checksum_file": "data/checksums.sha256"
+  },
+  "locked_results": {
+    "file": "results/results.json",
+    "sha256": "48949c2eb481be2c42713d5362fddb860ee44d11cd9e8c0297d13f424fa1f07c",
+    "legacy_feature_collisions": 60,
+    "legacy_test_records": 64,
+    "legacy_raw_neighborhood_duplicates": 18,
+    "signature_group_overlap": 0,
+    "signature_group_zero_distance_records": 0,
+    "signature_group_hierarchy_mse": 0.002526407617,
+    "signature_group_nearest_mse": 0.002441364857,
+    "signature_group_p1_feature_affine_p2_regret": 0.007735826718,
+    "rank8_relative_frobenius_error": 3.84417e-07,
+    "rank8_storage_fraction": 0.270833333333,
+    "rank8_bound_violations": 0,
+    "theorem_checks": 7
+  },
+  "wheel": {
+    "tested_file": "hqml_topological_qaoa-2.0.0-py3-none-any.whl",
+    "sha256": "3b738221c6573a66b9b1bf264fac192bc6fc44f9e5968ddbfc4f597a39936302",
+    "fresh_install_verified": true
+  },
+  "commands": {
+    "install": "python -m pip install ./code",
+    "reproduce": "topological-qaoa-reproduce --verify",
+    "tests": "python -m pytest -q code/tests",
+    "validate": "python code/scripts/validate_release.py"
+  },
+  "claim_boundaries": [
+    "topology-only unweighted MaxCut",
+    "dependent ten-vertex neighborhoods",
+    "depth-one grid reference",
+    "depth-two 25-query local reference rather than a global optimum",
+    "conditional hierarchy counts rather than an unconditional complexity improvement",
+    "dense BLAS faster at every tested record count",
+    "CPU simulation rather than hardware evidence"
+  ]
+}

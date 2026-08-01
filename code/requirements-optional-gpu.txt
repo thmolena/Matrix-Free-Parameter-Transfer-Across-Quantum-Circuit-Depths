@@ -1,8 +1,0 @@
-# Optional accelerated backends. The CPU reference runs everything without
-# these; they enable larger-scale runs and a learned message-passing GNN.
-#   torch            -- GNN warm-start backend + RL policy gradients
-#   cuquantum-python -- GPU statevector / tensor-network QAOA for n > ~20
-#   torch-geometric  -- message-passing GNN layers
-torch>=2.0
-# cuquantum-python>=23.10   # requires CUDA-capable GPU
-# torch-geometric>=2.4

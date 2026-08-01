@@ -1,0 +1,16 @@
+\begin{table}[t]
+\caption{\label{tab:depth}True depth-transfer controls, which receive each test graph's $p=1$ reference. MSE covers the four normalized $p=2$ coordinates.}
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Method & $p=2$ MSE & $R_2$ (\%)\\
+\midrule
+INTERP (source) & 6.622e-03 & 6.632\\
+INTERP (signature) & 6.622e-03 & 6.632\\
+$p=1$ affine (source) & 9.476e-04 & 1.350\\
+$p=1$ affine (signature) & 2.165e-03 & 4.050\\
+$p=1$ + features affine (source) & 4.468e-02 & 2.994\\
+$p=1$ + features affine (signature) & 1.265e-03 & 0.774\\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "study": "collision-aware QAOA depth-transfer audit",
+  "locked_results": {
+    "path": "code/results/results.json",
+    "sha256": "48949c2eb481be2c42713d5362fddb860ee44d11cd9e8c0297d13f424fa1f07c"
+  },
+  "generated_tables": [
+    "code/manuscript_assets/tables/tab_data.tex",
+    "code/manuscript_assets/tables/tab_protocols.tex",
+    "code/manuscript_assets/tables/tab_results.tex",
+    "code/manuscript_assets/tables/tab_depth.tex",
+    "code/manuscript_assets/tables/tab_operator.tex"
+  ],
+  "generated_figures": [
+    "code/manuscript_assets/figures/collision_law.pdf",
+    "code/manuscript_assets/figures/protocol_performance.pdf",
+    "code/manuscript_assets/figures/fold_regret.pdf",
+    "code/manuscript_assets/figures/operator_audit.pdf",
+    "code/manuscript_assets/figures/stability_certificate.pdf"
+  ],
+  "verification": {
+    "theorem_checks": 7,
+    "tests": 9,
+    "pdf_pages_inspected": 7,
+    "fresh_wheel_install": true,
+    "release_validator": true
+  }
+}

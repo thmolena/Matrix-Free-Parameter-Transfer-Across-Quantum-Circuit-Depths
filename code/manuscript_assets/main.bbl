@@ -1,0 +1,34 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Apte et~al.(2026)Apte, Sureshbabu, Shaydulin, Boulebnane, He, Herman,
+  Sud, and Pistoia]{Apte2026}
+Anuj Apte, Shree~Hari Sureshbabu, Ruslan Shaydulin, Sami Boulebnane, Zichang
+  He, Dylan Herman, James Sud, and Marco Pistoia.
+\newblock Iterative interpolation schedules for quantum approximate
+  optimization algorithm.
+\newblock \emph{ACM Transactions on Quantum Computing}, 2026.
+\newblock \doi{10.1145/3815778}.
+
+\bibitem[Farhi et~al.(2014)Farhi, Goldstone, and Gutmann]{Farhi2014}
+Edward Farhi, Jeffrey Goldstone, and Sam Gutmann.
+\newblock A quantum approximate optimization algorithm, 2014.
+
+\bibitem[Ye(2003)]{Gset}
+Yinyu Ye.
+\newblock Gset max-cut benchmark collection.
+\newblock Stanford University, 2003.
+\newblock URL \url{https://web.stanford.edu/~yyye/yyye/Gset/}.
+
+\bibitem[Zhou et~al.(2020)Zhou, Wang, Choi, Pichler, and Lukin]{Zhou2020}
+Leo Zhou, Sheng-Tao Wang, Soonwon Choi, Hannes Pichler, and Mikhail~D. Lukin.
+\newblock Quantum approximate optimization algorithm: Performance, mechanism,
+  and implementation on near-term devices.
+\newblock \emph{Physical Review X}, 10:\penalty0 021067, 2020.
+\newblock \doi{10.1103/PhysRevX.10.021067}.
+
+\end{thebibliography}

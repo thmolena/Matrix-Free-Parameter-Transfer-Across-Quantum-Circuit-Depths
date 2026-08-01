@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this audit or software, please cite the work below."
+title: "A Collision-Aware Audit of QAOA Parameter Transfer Across Circuit Depths"
+authors:
+  - family-names: Huynh
+    given-names: Molena
+version: 2.0.0
+date-released: 2026-07-31
+license: MIT
+repository-code: "https://github.com/thmolena/Matrix-Free-Parameter-Transfer-Across-Quantum-Circuit-Depths"
+keywords:
+  - QAOA
+  - parameter transfer
+  - data leakage
+  - hierarchical matrices
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "A Collision-Aware Audit of QAOA Parameter Transfer Across Circuit Depths"
+  authors:
+    - family-names: Huynh
+      given-names: Molena
+  year: 2026

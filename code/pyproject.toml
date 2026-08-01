@@ -1,49 +1,31 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "topoqaoa"
-version = "0.1.0"
-description = "Topology-conditioned QAOA warm starts: a query-counted, relabeling-invariant MaxCut benchmark"
+name = "hqml-topological-qaoa"
+version = "2.0.0"
+description = "Collision-aware audit of QAOA parameter transfer on authenticated Stanford Gset sources"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.9"
-license = { text = "MIT" }
-authors = [{ name = "Molena Huynh", email = "molena.huynh@jmp.com" }]
-keywords = [
-  "QAOA",
-  "MaxCut",
-  "warm start",
-  "graph topology",
-  "quantum optimization",
-  "benchmark",
-]
-classifiers = [
-  "Development Status :: 4 - Beta",
-  "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: MIT License",
-  "Operating System :: OS Independent",
-  "Programming Language :: Python :: 3",
-  "Topic :: Scientific/Engineering",
-]
-dependencies = [
-  "numpy>=1.24,<3",
-  "scipy>=1.10,<2",
-  "networkx>=3.0,<4",
-  "scikit-learn>=1.2,<2",
-  "matplotlib>=3.6,<4",
-  "pyyaml>=6.0,<7",
-]
+dependencies = ["numpy>=1.24,<2", "matplotlib>=3.7,<4"]
 
 [project.optional-dependencies]
-gpu = ["torch>=2.0,<3"]
-dev = ["pytest>=7.0,<9", "build>=1.0,<2", "twine>=4.0,<7"]
+test = ["pytest>=8,<10"]
 
 [project.scripts]
-topoqaoa-reproduce = "topoqaoa.reproduce:main"
+topological-qaoa-reproduce = "hqml_topological_qaoa.audit:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
 
 [tool.setuptools.packages.find]
 where = ["src"]
+include = ["hqml_topological_qaoa*"]
+
+[tool.setuptools.package-data]
+"hqml_topological_qaoa" = ["data/source/*", "results/*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
